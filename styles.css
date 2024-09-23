@@ -32,7 +32,7 @@ header ul {
     justify-content: flex-end;
     margin: 0;
     padding: 0;
-    gap: 15px; /* Spacing between menu items */
+    gap: 30px; /* Increased gap for better spacing */
 }
 
 header ul li {
@@ -43,6 +43,12 @@ header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px; /* Add padding to each link for more clickable area */
+}
+
+header ul li a:hover {
+    background-color: #555; /* Optional: Add hover effect for better UI feedback */
+    border-radius: 5px;
 }
 
 main {
@@ -101,7 +107,7 @@ a.button:hover {
         flex-direction: row; /* Keep the menu items horizontal on mobile */
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px; /* Increased gap for more space between items */
     }
 
     header img {
@@ -109,7 +115,11 @@ a.button:hover {
     }
 
     header ul li {
-        margin: 0; /* Remove vertical margins */
+        margin: 0;
+    }
+
+    header ul li a {
+        padding: 10px 20px; /* Add padding for better clickable area and spacing */
     }
 
     main {
