@@ -24,6 +24,7 @@ header {
 
 header img {
     height: 40px;
+    margin-right: 30px; /* Add space between the logo and the navigation */
 }
 
 header ul {
@@ -103,15 +104,16 @@ a.button:hover {
         align-items: center;
     }
 
+    header img {
+        height: 50px;
+        margin-bottom: 15px; /* Add some space between logo and navigation on mobile */
+    }
+
     header ul {
         flex-direction: row; /* Keep the menu items horizontal on mobile */
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px; /* Increased gap for more space between items */
-    }
-
-    header img {
-        height: 50px; /* Slightly increase the logo size for better visibility */
     }
 
     header ul li {
