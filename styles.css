@@ -1,12 +1,15 @@
 /* Basic Styles */
-body {
-    font-family: Arial, sans-serif;
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%; /* Ensure the body takes up the full height */
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Ensure full height of the page */
+}
+
+body {
     display: flex;
-    flex-direction: column; /* Column layout for body */
+    flex-direction: column;
 }
 
 header {
@@ -34,7 +37,7 @@ header ul li a {
 main {
     padding: 20px;
     text-align: center;
-    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+    flex-grow: 1; /* This will push the footer to the bottom */
 }
 
 footer {
@@ -42,9 +45,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    max-width: 1200px; /* Set max width to limit footer expansion */
-    margin: 0 auto; /* Center the footer */
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 h1, h2 {
@@ -88,6 +91,5 @@ a.button:hover {
 
     footer {
         padding: 15px;
-        width: 100%;
     }
 }
