@@ -66,3 +66,23 @@ a.button:hover {
 .intro {
     margin-bottom: 40px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .intro {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
