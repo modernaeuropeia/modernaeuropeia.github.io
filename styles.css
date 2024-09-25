@@ -14,34 +14,36 @@ body {
     flex-direction: column;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px 40px;
-    /* Increased padding for a more spacious look */
+    /* Increased padding for more space */
     display: flex;
     justify-content: space-between;
-    /* Logo on the left, navigation on the right */
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add subtle shadow to make the header stand out */
+    /* Use flexbox for centering elements */
+}
+
+header a {
+    display: flex;
+    align-items: center;
 }
 
 header img {
     height: 50px;
-    /* Adjust logo size */
 }
 
 header ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    /* Align navigation to the right */
+    justify-content: center;
+    /* Center the navigation items */
+    gap: 40px; /* Increase space between navigation items */
     margin: 0;
     padding: 0;
-    gap: 30px;
-    /* Increased gap for better spacing */
+    flex-grow: 1;
+    /* Ensure the list takes up as much space as possible */
 }
 
 header ul li {
@@ -58,12 +60,33 @@ header ul li a {
 
 header ul li a:hover {
     background-color: #555;
-    /* Optional: Add hover effect for better UI feedback */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    /* Smooth transition effect on hover */
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+nav ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    /* Center the menu items */
+}
+
+/* Center the logo in the middle section */
+.logo-center {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0; /* Add space above and below the logo */
+}
+
+.logo-center img {
+    max-width: 200px; /* Adjust the logo size if necessary */
+    height: auto;
+}
 /* Main Section */
 main {
     padding: 40px;
