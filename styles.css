@@ -1,8 +1,10 @@
 /* Basic Styles */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure the body takes up the full height */
+    height: 100%;
+    /* Ensure the body takes up the full height */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
@@ -12,26 +14,34 @@ body {
     flex-direction: column;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    /* Increased padding for a more spacious look */
     display: flex;
-    justify-content: space-between; /* Logo on the left, navigation on the right */
+    justify-content: space-between;
+    /* Logo on the left, navigation on the right */
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow to make the header stand out */
 }
 
 header img {
-    height: 50px; /* Adjust logo size */
+    height: 50px;
+    /* Adjust logo size */
 }
 
 header ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end; /* Align navigation to the right */
+    justify-content: flex-end;
+    /* Align navigation to the right */
     margin: 0;
     padding: 0;
-    gap: 30px; /* Increased gap for better spacing */
+    gap: 30px;
+    /* Increased gap for better spacing */
 }
 
 header ul li {
@@ -42,91 +52,200 @@ header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px; /* Add padding to each link for more clickable area */
+    padding: 10px 15px;
+    /* Add padding to each link for more clickable area */
 }
 
 header ul li a:hover {
-    background-color: #555; /* Optional: Add hover effect for better UI feedback */
+    background-color: #555;
+    /* Optional: Add hover effect for better UI feedback */
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition effect on hover */
 }
 
+/* Main Section */
 main {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center content and add max width for better readability */
 }
 
-footer {
+/* Services List Styling */
+ul.services-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 1200px;
+    /* To prevent text from stretching too wide */
+    margin: 0 auto;
+    /* Center the list */
+}
+
+ul.services-list li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    /* Increased line height for more space between lines */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for visual separation */
+    word-wrap: break-word;
+    /* Ensure words break to the next line if needed */
+}
+
+ul.services-list li strong {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-h1, h2 {
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Typography */
+h1,
+h2 {
     color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    /* Increased font size for better visual hierarchy */
+}
+
+h2 {
+    font-size: 28px;
 }
 
 p {
     color: #666;
-    line-height: 1.5;
-    padding: 0 20px; /* Improve text readability with padding */
+    line-height: 1.7;
+    font-size: 18px;
+    padding: 0 20px;
+    /* Improve text readability with padding */
+    margin-bottom: 20px;
+    /* Add vertical spacing between paragraphs */
 }
 
+/* Buttons */
 a.button {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
 }
 
 a.button:hover {
     background-color: #555;
 }
 
-.intro {
-    margin-bottom: 40px;
-    padding: 0 20px; /* Add some padding for mobile */
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: center; /* Center everything for mobile view */
+        align-items: center;
+        /* Center everything for mobile view */
+        padding: 20px;
     }
 
     header img {
         height: 50px;
-        margin-bottom: 10px; /* Ensure some space between logo and navigation */
+        margin-bottom: 10px;
+        /* Ensure some space between logo and navigation */
     }
 
     header ul {
-        flex-direction: row; /* Keep the menu items horizontal on mobile */
-        justify-content: center; /* Center the menu on mobile */
-        gap: 15px; /* Adjust gap for mobile */
+        flex-direction: row;
+        /* Keep the menu items horizontal on mobile */
+        justify-content: center;
+        /* Center the menu on mobile */
+        gap: 15px;
+        /* Adjust gap for mobile */
     }
 
     header ul li a {
-        padding: 10px 15px; /* Add padding for better clickable area and spacing */
+        padding: 10px 15px;
+        /* Add padding for better clickable area and spacing */
     }
-    
+
     main {
-        padding: 10px;
+        padding: 20px;
+        /* Adjust padding for mobile view */
     }
 
     p {
-        font-size: 16px; /* Slightly larger text for better readability */
+        font-size: 16px;
+        /* Slightly larger text for better readability */
     }
 
     .intro {
-        padding: 0 10px; /* Ensure there’s some padding on the sides */
+        padding: 0 10px;
+        /* Ensure there’s some padding on the sides */
     }
 
     footer {
@@ -134,7 +253,9 @@ a.button:hover {
     }
 
     a.button {
-        font-size: 18px; /* Larger button text */
-        padding: 15px 25px; /* More padding for easier tap interaction */
+        font-size: 18px;
+        /* Larger button text */
+        padding: 15px 25px;
+        /* More padding for easier tap interaction */
     }
 }
