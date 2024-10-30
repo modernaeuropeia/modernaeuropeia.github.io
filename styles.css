@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* Ensure the body takes up the full height */
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
@@ -18,11 +17,9 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 40px;
-    /* Increased padding for more space */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Use flexbox for centering elements */
 }
 
 header a {
@@ -38,16 +35,10 @@ header ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    /* Center the navigation items */
-    gap: 40px; /* Increase space between navigation items */
+    gap: 40px;
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    /* Ensure the list takes up as much space as possible */
-}
-
-header ul li {
-    margin: 0;
 }
 
 header ul li a {
@@ -55,56 +46,37 @@ header ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    /* Add padding to each link for more clickable area */
 }
 
 header ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav ul {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    /* Center the menu items */
-}
-
-/* Center the logo in the middle section */
 .logo-center {
     display: flex;
     justify-content: center;
-    margin: 40px 0; /* Add space above and below the logo */
+    margin: 40px 0;
 }
 
 .logo-center img {
-    max-width: 200px; /* Adjust the logo size if necessary */
+    max-width: 200px;
     height: auto;
 }
-/* Main Section */
+
 main {
     padding: 40px;
     text-align: center;
     flex-grow: 1;
     max-width: 1200px;
     margin: 0 auto;
-    /* Center content and add max width for better readability */
 }
 
-/* Services List Styling */
 ul.services-list {
     list-style-type: none;
     padding: 0;
     max-width: 1200px;
-    /* To prevent text from stretching too wide */
     margin: 0 auto;
-    /* Center the list */
 }
 
 ul.services-list li {
@@ -112,12 +84,9 @@ ul.services-list li {
     padding: 20px;
     margin-bottom: 20px;
     line-height: 1.8;
-    /* Increased line height for more space between lines */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Light shadow for visual separation */
     word-wrap: break-word;
-    /* Ensure words break to the next line if needed */
 }
 
 ul.services-list li strong {
@@ -125,7 +94,6 @@ ul.services-list li strong {
     font-size: 18px;
 }
 
-/* Contact Form Styling */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -172,7 +140,6 @@ ul.services-list li strong {
     background-color: #555;
 }
 
-/* Typography */
 h1,
 h2 {
     color: #333;
@@ -181,7 +148,6 @@ h2 {
 
 h1 {
     font-size: 36px;
-    /* Increased font size for better visual hierarchy */
 }
 
 h2 {
@@ -193,12 +159,9 @@ p {
     line-height: 1.7;
     font-size: 18px;
     padding: 0 20px;
-    /* Improve text readability with padding */
     margin-bottom: 20px;
-    /* Add vertical spacing between paragraphs */
 }
 
-/* Buttons */
 a.button {
     background-color: #333;
     color: white;
@@ -209,14 +172,12 @@ a.button {
     margin-top: 20px;
     font-size: 18px;
     transition: background-color 0.3s ease;
-    /* Smooth hover effect */
 }
 
 a.button:hover {
     background-color: #555;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -232,43 +193,26 @@ footer {
     header {
         flex-direction: column;
         align-items: center;
-        /* Center everything for mobile view */
         padding: 20px;
     }
 
-    header img {
-        height: 50px;
-        margin-bottom: 10px;
-        /* Ensure some space between logo and navigation */
-    }
-
     header ul {
-        flex-direction: row;
-        /* Keep the menu items horizontal on mobile */
-        justify-content: center;
-        /* Center the menu on mobile */
-        gap: 15px;
-        /* Adjust gap for mobile */
-    }
-
-    header ul li a {
-        padding: 10px 15px;
-        /* Add padding for better clickable area and spacing */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
     }
 
     main {
         padding: 20px;
-        /* Adjust padding for mobile view */
     }
 
     p {
         font-size: 16px;
-        /* Slightly larger text for better readability */
     }
 
     .intro {
         padding: 0 10px;
-        /* Ensure there’s some padding on the sides */
     }
 
     footer {
@@ -277,8 +221,6 @@ footer {
 
     a.button {
         font-size: 18px;
-        /* Larger button text */
         padding: 15px 25px;
-        /* More padding for easier tap interaction */
     }
 }
