@@ -4,64 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Moderna Europeia offers a range of services including backend development, frontend development, embedded systems, and IT consulting.">
+    <meta name="description" content="Moderna Europeia offers a range of services including backend development, frontend development, embedded systems, and IT consulting.">
     <title>Services - Moderna Europeia</title>
-    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html">
-                <img src="icon/logo.png" alt="Moderna Europeia company logo" style="height: 50px; vertical-align: middle;">
-                <span style="font-size: 24px; font-weight: bold; color: #fff; margin-left: 10px;">Moderna
-                    Europeia</span>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="icon/logo.png" alt="Moderna Europeia logo" style="height: 50px;">
+                Moderna Europeia
             </a>
-            <ul style="float: right;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Our Services</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Discover how Moderna Europeia can empower your business with tailored IT solutions and innovative technologies.</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="intro">
-            <h1>Our Services</h1>
-            <ul class="services-list">
-                <li><strong>Backend Development:</strong> We specialize in building robust and scalable server-side
-                    applications, leveraging modern technologies to deliver efficient and secure solutions tailored to
-                    your business needs.</li>
-                <li><strong>Frontend Development:</strong> Our team creates responsive, intuitive user interfaces using
-                    the latest frontend frameworks and technologies, ensuring an engaging user experience across all
-                    devices.</li>
-                <li><strong>Embedded Systems:</strong> We develop firmware and software for embedded devices and IoT
-                    applications, providing seamless integration with hardware to enhance functionality and performance.
-                </li>
-                <li><strong>IT Consulting:</strong> With deep expertise in IT infrastructure, we offer strategic
-                    consulting services to optimize your systems, improve performance, and reduce operational costs.
-                </li>
-                <li><strong>Full-Stack Development:</strong> Offering comprehensive end-to-end solutions, we handle
-                    everything from database design to client-side applications, ensuring seamless functionality and
-                    performance across the stack.</li>
-                <li><strong>Custom Software Solutions:</strong> We craft tailored software solutions designed
-                    specifically to meet your unique business requirements, focusing on scalability and adaptability.
-                </li>
-                <li><strong>API Development and Integration:</strong> We design and implement APIs to enable seamless
-                    communication between services, ensuring secure and efficient data transfer between systems.</li>
-                <li><strong>Cloud Services:</strong> Our expertise in cloud platforms, including AWS, Azure, and Google
-                    Cloud, enables us to deploy, manage, and optimize cloud-based applications for enhanced scalability
-                    and cost efficiency.</li>
-            </ul>
-        </section>
-    </main>
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Backend Development</h3>
+                        <p class="text-muted mb-0">Robust and scalable server-side applications tailored to your business needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Frontend Development</h3>
+                        <p class="text-muted mb-0">Creating responsive and intuitive user interfaces for seamless user experiences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Embedded Systems</h3>
+                        <p class="text-muted mb-0">Seamless integration of hardware and software for IoT and embedded devices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-bar-chart fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">IT Consulting</h3>
+                        <p class="text-muted mb-0">Strategic IT consulting to optimize your systems and reduce operational costs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-box fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Custom Software Solutions</h3>
+                        <p class="text-muted mb-0">Tailored software solutions designed to meet your unique business requirements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-cloud fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Cloud Services</h3>
+                        <p class="text-muted mb-0">Deploying and managing cloud-based applications for scalability and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2024 Moderna Europeia. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">&copy; 2025 Moderna Europeia. All Rights Reserved.</div>
+        </div>
     </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
